@@ -26,8 +26,46 @@
       margin: 24px auto;
       padding: 0 8px 0 16px;
     }
-    .logo {
+    .logo-wrapper {
+      width: 180px;
       margin: 0 auto;
+      position: relative;
+    }
+    .logo-wrapper .msg {
+      display: none;
+      position: absolute;
+      background: #ffffff;
+      padding: 16px;
+      border: 2px #000000 solid;
+      border-radius: 60px;
+      font-size: 14px;
+      text-align: center;
+      top: -30px;
+      right: -100px;
+      transform: rotate(10deg);
+    }
+    .logo-wrapper .msg::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 16px solid #000000;
+      top: 75px;
+      left: 20px;
+      transform: rotate(10deg);
+    }
+    .logo-wrapper .msg a {
+      text-decoration: none;
+      color: #2e7d1b;
+    }
+    .logo-wrapper:hover .msg {
+      display: block;
+    }
+    .logo {
+      width: 100%;
       display: block;
     }
     .content article {
@@ -73,7 +111,13 @@
 
   <main class="content">
 
-    <img class="logo" src="img/lisp_mascot.svg" alt="LISP mascot hacking on LISP" width=180>
+    <div class="logo-wrapper">
+      <div class="msg">
+        I have a task for you!<br/>
+        <a href="https://clojurescript.ru/koans/" target="_blank"><code>(doall tasks)</code></a>
+      </div>
+      <img class="logo" src="img/lisp_mascot.svg" alt="LISP mascot hacking on LISP">
+    </div>
 
     <article>
       <h2 id="faq">FAQ</h2>
