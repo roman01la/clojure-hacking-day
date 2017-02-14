@@ -1,0 +1,154 @@
+/* globals */
+body,
+.screen {
+  margin: 0;
+  font: normal 16px sans-serif;
+}
+
+#app * { box-sizing: border-box;}
+
+/* base */
+input {
+  border: none;
+  border-radius: 4px;
+  height: 32px;
+  font-size: 14px;
+  padding: 0 8px;
+}
+button {
+  border: none;
+  border-radius: 4px;
+  height: 32px;
+  background: #338de9;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* top level screen */
+.screen {
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.screen.chat main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* screen header */
+.app-header {
+  height: 48px;
+  background: #338de9;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+.menu-btn {
+  font-size: 17px;
+  padding: 0 12px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* chat list */
+.chat-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* chat messages time group header */
+.time {
+  font-size: 8px;
+  color: #999;
+  text-align: center;
+  margin: 16px 0 0;
+}
+
+/* chat message */
+.chat-msg {
+  padding: 8px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 8px 0;
+}
+.chat-msg.owner {
+  flex-direction: row;
+}
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.bubble {
+  padding: 8px 16px 8px 8px;
+  font-size: 14px;
+  background: #eeeeee;
+  margin: 0 8px;
+  border-radius: 4px;
+}
+.bubble-uname {
+  text-align: right;
+  font-size: 12px;
+  margin: 0 0 4px;
+  color: #666;
+}
+.bubble-uname_owner {
+  text-align: left;
+  font-size: 12px;
+  margin: 0 0 4px;
+  color: #666;
+}
+
+/* message form */
+form.message {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 8px;
+  border-radius: 2px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+}
+form.message input {
+  background: #eee;
+}
+
+/* off canvas navigation menu */
+.menu-wrap {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: flex-end;
+}
+.menu {
+  width: 280px;
+  height: 100vh;
+  background: #fafafa;
+  box-shadow: 0 -2px 32px rgba(0, 0, 0, 0.4);
+  padding: 32px 0;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.menu a {
+  text-decoration: none;
+  color: #666;
+  padding: 16px;
+  background: #eee;
+  display: block;
+}
+.menu .list-item {
+  margin: 0 0 4px;
+}
