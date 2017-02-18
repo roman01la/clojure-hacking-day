@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="283px" height="294px" viewBox="0 0 283 294" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>body</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="body" transform="translate(0.000000, -11.000000)">
+            <g id="planet" transform="translate(0.000000, 11.000000)">
+                <circle id="Oval-6" fill="#AB42C8" cx="141.5" cy="141.5" r="141.5"></circle>
+                <g id="Group-11" transform="translate(17.000000, 12.000000)" stroke="#DB92EF" stroke-linecap="round">
+                    <ellipse id="Oval-7" stroke-width="4" fill="#813196" transform="translate(24.343750, 158.414062) rotate(-10.000000) translate(-24.343750, -158.414062) " cx="24.34375" cy="158.414062" rx="20" ry="25"></ellipse>
+                    <ellipse id="Oval-7" stroke-width="4" fill="#813296" transform="translate(224.804688, 99.636719) rotate(-9.000000) translate(-224.804688, -99.636719) " cx="224.804688" cy="99.6367188" rx="17.5" ry="22"></ellipse>
+                    <ellipse id="Oval-7" stroke-width="4" fill="#813296" transform="translate(137.500000, 14.000000) rotate(8.000000) translate(-137.500000, -14.000000) " cx="137.5" cy="14" rx="14.5" ry="12"></ellipse>
+                    <ellipse id="Oval-7" stroke-width="2" fill="#813296" transform="translate(9.472324, 75.797711) rotate(21.000000) translate(-9.472324, -75.797711) " cx="9.47232358" cy="75.7977112" rx="4" ry="6.5"></ellipse>
+                </g>
+            </g>
+            <g id="mascot" transform="translate(27.000000, 0.000000)">
+                <ellipse id="Oval-4" fill="#000000" cx="137" cy="278" rx="93" ry="27"></ellipse>
+                <g id="Group-10" transform="translate(85.000000, 102.000000)" fill="#9EF08A">
+                    <path d="M53,3 C42,5 100,-23 100,67 C100,157 101,178 101,178 L0.995000125,178 L0.995000125,68.9585857 C0.995000125,68.9585857 0.538490387,-15.1597533 53,3 Z" id="Path-2" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                    <ellipse id="Oval-5" cx="51" cy="177" rx="49" ry="7"></ellipse>
+                </g>
+                <g id="eyes" transform="translate(106.000000, 84.000000)">
+                    <g id="eye" transform="translate(0.000000, 3.000000)">
+                        <circle id="Oval" stroke="#000000" stroke-linecap="round" fill="#FFFFFF" cx="12" cy="12" r="12"></circle>
+                        <circle id="Oval-2" fill="#000000" cx="9" cy="11" r="3"></circle>
+                    </g>
+                    <g id="eye" transform="translate(52.000000, 15.000000) scale(-1, 1) translate(-52.000000, -15.000000) translate(40.000000, 3.000000)">
+                        <circle id="Oval" stroke="#000000" stroke-linecap="round" fill="#FFFFFF" cx="12" cy="12" r="12"></circle>
+                        <circle id="Oval-2" fill="#000000" cx="13" cy="15" r="3"></circle>
+                    </g>
+                    <g id="eye" transform="translate(18.000000, 0.000000)">
+                        <circle id="Oval" stroke="#000000" stroke-linecap="round" fill="#FFFFFF" cx="14" cy="14" r="14"></circle>
+                        <circle id="Oval-2" fill="#000000" cx="10" cy="13" r="3"></circle>
+                    </g>
+                    <g id="eye" transform="translate(7.000000, 23.000000)">
+                        <circle id="Oval" stroke="#000000" stroke-linecap="round" fill="#FFFFFF" cx="14" cy="14" r="14"></circle>
+                        <circle id="Oval-2" fill="#000000" cx="14" cy="18" r="3"></circle>
+                    </g>
+                    <g id="eye" transform="translate(29.000000, 23.000000)">
+                        <circle id="Oval" stroke="#000000" stroke-linecap="round" fill="#FFFFFF" cx="14" cy="14" r="14"></circle>
+                        <circle id="Oval-2" fill="#000000" cx="14" cy="18" r="3"></circle>
+                    </g>
+                </g>
+                <g id="Group-4" transform="translate(105.000000, 148.000000)" stroke="#000000">
+                    <path d="M30.5,48 C46.2401154,48 59,34.3446849 59,17.5 C59,10.713407 57.8638528,9.23879229 57,1 C44.8638528,1.23879229 14.4608373,0.325734094 2,2 C0.478129089,11.6935336 2,11.1328838 2,17.5 C2,34.3446849 14.7598846,48 30.5,48 Z" id="Oval-3" stroke-width="2" stroke-linecap="round" fill="#FFFFFF"></path>
+                    <g id="Group-5">
+                        <path d="M28.5,36 C44.2401154,36 57,22.3446849 57,5.5 C57,-1.28659301 -3.62376795e-13,-0.867116237 -3.62376795e-13,5.5 C-3.62376795e-13,22.3446849 12.7598846,36 28.5,36 Z" id="Oval-3" stroke-linecap="round"></path>
+                        <path d="M50,15 L59,20" id="Line" stroke-linecap="square"></path>
+                        <path d="M42,19 L53,35" id="Line" stroke-linecap="square"></path>
+                        <path d="M33,23 L43,45" id="Line" stroke-linecap="square"></path>
+                        <path d="M23,26 L25,47" id="Line" stroke-linecap="square"></path>
+                        <path d="M13,27 L11,40" id="Line" stroke-linecap="square"></path>
+                    </g>
+                </g>
+                <g id="Group-8" transform="translate(149.000000, 173.000000)" stroke="#000000" stroke-linecap="round">
+                    <path d="M24.1920074,3.00166927 C24.1920074,3.00166927 4.19200739,20.0016693 4.19200739,52.0016693 C4.19200739,84.0016693 23.1920074,103.001669 23.1920074,103.001669 C23.1920074,103.001669 10.1920074,92.0016693 10.1920074,52.0016693 C10.1920074,12.0016693 24.1920074,3.00166927 24.1920074,3.00166927 Z" id="Path-4" stroke-width="3" stroke-linejoin="round" fill="#000000" transform="translate(14.192007, 53.001669) scale(-1, -1) rotate(-356.000000) translate(-14.192007, -53.001669) "></path>
+                    <path d="M32,0 C32,0 106,31 31,74 C30.3495329,73.2682245 34,85 23,85 C13,85 17,75 17,75 C17,75 8,76 8,69 C8,58 23,64 23,64 C23,64 86,37 27,11" id="Path-3" stroke-width="2" fill="#9EF08A"></path>
+                </g>
+                <g id="Group-9" transform="translate(57.000000, 173.000000)" stroke="#000000" stroke-linecap="round">
+                    <path d="M63,14 C63,14 43,31 43,63 C43,95 62,114 62,114 C62,114 49,103 49,63 C49,23 63,14 63,14 Z" id="Path-4" stroke-width="3" stroke-linejoin="round" fill="#000000" transform="translate(53.000000, 64.000000) rotate(-15.000000) translate(-53.000000, -64.000000) "></path>
+                    <path d="M24,0 C24,0 98,31 23,74 C22.3495329,73.2682245 26,85 15,85 C5,85 9,75 9,75 C9,75 -2.84217094e-14,76 0,69 C-1.4149609e-14,58 15,64 15,64 C15,64 78,37 19,11" id="Path-3" stroke-width="2" fill="#9EF08A" transform="translate(28.297291, 42.500000) scale(-1, 1) translate(-28.297291, -42.500000) "></path>
+                </g>
+                <g id="Group">
+                    <g id="Group-2" transform="translate(38.000000, 102.000000)">
+                        <path d="M132,40 C132,40 124,64 89,72 C65.2029443,76.9577199 24,62 1,4 C1,4 6,-5.04870979e-29 12,1.91846539e-13 C25,10 34,56 80,40 L132,40 Z" id="Path-6" fill="#9EF08A"></path>
+                        <path d="M69,40 C69,40 44,58 13,0" id="Path-5" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                        <path d="M132,40 C132,40 125,64 90,72 C66.2029443,76.9577199 23,62 0,4" id="Path-6" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                    </g>
+                    <g id="Group-3" transform="translate(53.008326, 55.845878) rotate(-9.000000) translate(-53.008326, -55.845878) translate(7.508326, 6.845878)">
+                        <polygon id="Path-10" fill="#9EF08A" points="23 97 36 94 35 76 31 71 20 76 20 91"></polygon>
+                        <path d="M23,97 C23,97 17,96 16.0513989,86.2019663 C16.0361647,86.133183 16.0169199,86.0676795 16,86 C15,83 16,82 11,78 C6,74 4,70 4,68 C4,66 7,61 9,61 C11,61 21,75 21,75" id="Path-7" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#9EF08A"></path>
+                        <path d="M19,78 C19,78 22,74 23,74 C23,74 17,54 27,49 C31,48 34,56 34,56 C34,56 29,68 33,73" id="Path-8" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#9EF08A"></path>
+                        <g id="Group-6" transform="translate(45.459963, 47.511583) rotate(-345.000000) translate(-45.459963, -47.511583) translate(9.459963, 8.011583)">
+                            <g id="Group-7" transform="translate(4.000000, -0.000000)">
+                                <path d="M3,13 L11,9 L14,7 L18,12 C18,12 26.5746047,16.257145 30,21 C33.4253953,25.742855 31,30 31,30 C31,30 41,25 50,23 C59,21 67,26 67,26 L55,39 L22,44 L9,39 L5,19 L3,13 Z" id="Path-18" fill="#FFFFFF"></path>
+                                <path d="M62,38 C62,38 63,34 67,32 C71,30 47,23 34,31" id="Path-13" stroke="#000000" stroke-width="2" stroke-linecap="round" fill="#FFFFFF"></path>
+                                <path d="M28,7 C28,7 31,6 33,1 C35,-4 37,19 29,31" id="Path-17" stroke="#000000" stroke-width="2" stroke-linecap="round" fill="#FFFFFF"></path>
+                                <path d="M18,12 L24,3 C24,3 30.9063153,4 27,27" id="Path-16" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF"></path>
+                                <path d="M65,29 L67,26 C67,26 51,13 24,35 C24,35 23,18 14,6 L11,9" id="Path-14" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M0,11 C0,11 1,9 7,6 C9,5 16,19 16,19" id="Path-15" stroke="#000000" stroke-width="2" stroke-linecap="round" fill="#FFFFFF"></path>
+                            </g>
+                            <path d="M20,33 C20,33 23,21 7.10542736e-15,9 C7.10542736e-15,9 5,25 1,52 C1,53 14,62 13,70 C17,75 24,77 24,77 C24,77 42,69 61,78 C61,78 64,56 72,44 C72,44 54,22 29,40 C23,42 20,33 20,33 Z" id="Path-12" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#319AD3"></path>
+                            <path d="M57.6992913,46.4817711 L58.4353734,46.4817711 C58.4353734,44.3501126 58.0877791,42.7985889 57.3925904,41.8272002 C56.6974018,40.8558115 55.8181926,40.3701172 54.7549629,40.3701172 C53.8962005,40.3701172 53.071516,40.6871677 52.2809092,41.3212686 C51.4903025,41.9553696 50.7814828,43.675537 50.1544498,46.4817711 L48.3960315,54.3338297 L42.3029075,40.6534389 L38.4384766,40.6534389 L47.1896748,59.3121967 C46.7262156,61.7271763 46.1673385,63.5148027 45.5130433,64.6750718 C44.8587481,65.835341 44.0476947,66.4154766 43.0798831,66.4154766 C42.3029075,66.4154766 41.6281656,66.1254098 41.0556573,65.5452742 C40.483149,64.9651386 40.1560014,64.0544617 40.0742145,62.8132435 L39.3381325,62.8132435 C39.3790259,64.7964954 39.7811448,66.3817471 40.5444892,67.5690006 C41.3078335,68.7562542 42.2620141,69.356625 43.4070307,69.3701172 C44.1431128,69.3701172 44.8383014,69.0733033 45.4925966,68.4796776 C46.1468918,67.8860518 46.7194001,66.8606964 47.2101215,65.4036133 C47.7008429,63.9465303 48.4573717,60.937923 49.4797079,56.3777934 L50.9314254,49.9625806 C51.5175649,47.3047532 52.1309666,45.5306196 52.7716306,44.64018 C53.4122946,43.7497404 54.1892701,43.2977748 55.1025572,43.2842833 C56.6292461,43.2842833 57.494824,44.3501126 57.6992913,46.4817711 Z" id="path10" fill="#041722" transform="translate(48.436925, 54.870117) scale(1, -1) rotate(-12.000000) translate(-48.436925, -54.870117) "></path>
+                            <path d="M12,73 C13,76 20.4612188,79 23,79 C25.5387812,79 29,41 29,39 C26,39 22,38 20,32 C18,32 11,70 12,73 Z" id="Path-11" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#73BDE5"></path>
+                        </g>
+                        <path d="M28,88 C28,88 25,80 31,76 C33,74 34,73 34,73 C34,73 33,63 44,64 C49,64 48,68 49,72 C43,75 38,76 42,85 C43,88 36,94 36,94" id="Path-9" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#9EF08A"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
