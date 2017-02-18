@@ -1,6 +1,6 @@
 # Clojure Hacking Day
 
-<img src="lisp.svg" width="192" />
+<img src="lisp.png" width="160" />
 
 Repository of related materials
 
