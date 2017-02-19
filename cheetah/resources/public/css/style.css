@@ -188,6 +188,9 @@ form.message input {
 form.message .send-btn {
   min-width: 64px;
 }
+form.message .send-btn:disabled {
+  background: #cccccc;
+}
 
 /** Sign In screen **/
 .screen.signin {
@@ -208,7 +211,7 @@ form.message .send-btn {
   position: absolute;
   display: block;
   height: 1px;
-  width: 96px;
+  width: 48px;
   background: #338de9;
   top: 50%;
 }
