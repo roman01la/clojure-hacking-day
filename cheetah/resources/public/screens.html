@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+      .app-screen {
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="app" class="app-screen">
+
+      <div class="screen signin">
+
+        <h1><em>Cheetah</em></h1>
+
+        <form action="" class="signin">
+          <input type="email" placeholder="Username">
+          <button>Sign In</button>
+        </form>
+
+      </div>
+
+    </div>
+
+    <div id="app" class="app-screen">
+
+      <div class="screen profile">
+
+        <header class="app-header">
+          <div class="left">
+            <button class="back btn"><</button>
+            <div class="screen-title">
+              <span>Profile</span>
+            </div>
+          </div>
+          <div class="right">
+            <button class="menu-btn">☰</button>
+          </div>
+        </header>
+
+        <main>
+
+          <img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/3/000/024/157/2fd1a24.jpg" alt="" class="avatar">
+
+          <form action="" class="profile">
+            <div class="field">
+              <label for="uname">User name</label>
+              <input type="text" id="uname">
+            </div>
+            <div class="field">
+              <label for="avatar">Avatar</label>
+              <button class="btn upload-avatar">Choose image</button>
+              <input type="file" id="avatar" accept="image/x-png,image/jpeg" hidden>
+            </div>
+            <button>Save</button>
+          </form>
+
+        </main>
+
+      </div>
+
+    </div>
+
+    <div id="app" class="app-screen">
+
+      <div class="screen rooms">
+
+        <header class="app-header">
+          <div class="left">
+            <div class="screen-title">
+              <span>Chat Rooms</span>
+            </div>
+          </div>
+          <div class="right">
+            <button class="menu-btn">☰</button>
+          </div>
+        </header>
+
+        <main>
+
+          <ul class="rooms-list">
+            <li class="room-item"><a href="#/rooms/general">General</a></li>
+            <li class="room-item"><a href="#/rooms/clojurescript">ClojureScript</a></li>
+            <li class="room-item"><a href="#/rooms/events">Events</a></li>
+          </ul>
+
+        </main>
+
+      </div>
+
+    </div>
+
+    <div id="app" class="app-screen">
+
+      <div class="screen chat">
+
+        <header class="app-header">
+          <div class="left">
+            <button class="back btn"><</button>
+            <div class="screen-title">
+              <span>ClojureScript</span>
+              <div class="room-users-count">Online: 3 / 5</div>
+            </div>
+          </div>
+          <div class="right">
+            <button class="menu-btn">☰</button>
+          </div>
+        </header>
+
+        <main>
+
+          <ul class="chat-list">
+            <li class="chat-msg">
+              <img src="https://2013.webrebels.org/gfx/speaker_david.jpg" alt="" class="avatar">
+              <div class="bubble">
+                <div class="bubble-uname">David Nolen</div>
+                <div class="body">The amount of innovation and invention in the ClojureScript community is nothing short of stunning.</div>
+              </div>
+            </li>
+            <li class="chat-msg">
+              <img src="https://2013.webrebels.org/gfx/speaker_david.jpg" alt="" class="avatar">
+              <div class="bubble">
+                <div class="bubble-uname">David Nolen</div>
+                <div class="body">As a group we are now thinking far beyond programming language esoterica and have turned towards the challenge of building the necessary environmental infrastructure required for the construction of simpler and more robust software systems.</div>
+              </div>
+            </li>
+            <li class="time">FEB 2, 8:55PM</li>
+            <li class="chat-msg owner">
+              <img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/3/000/024/157/2fd1a24.jpg" alt="" class="avatar">
+              <div class="bubble">
+                <div class="bubble-uname_owner">Rich Hickey</div>
+                <div class="body">Cool!</div>
+              </div>
+            </li>
+          </ul>
+
+        </main>
+
+        <footer class="app-footer">
+          <form action="" class="message">
+            <input type="text" class="message">
+            <button class="btn send-btn">Send</button>
+          </form>
+        </footer>
+
+      </div>
+
+      <div class="menu-wrap">
+        <div class="menu">
+          <ul class="list">
+            <li class="list-item">
+              <a href="#/rooms">Chat Rooms</a>
+            </li>
+            <li class="list-item">
+              <a href="#/profile">Profile</a>
+            </li>
+          </ul>
+        </div>
+        <div class="overlay"></div>
+      </div>
+
+    </div>
+
+
+    <script>
+      var btn = document.querySelectorAll('.menu-btn')[2];
+      var menu = document.querySelector('.menu-wrap');
+      var overlay = document.querySelector('.overlay');
+
+      menu.style.display = 'none';
+
+      btn.addEventListener('click', function() {
+        menu.style.display = 'flex';
+      });
+      overlay.addEventListener('click', function() {
+        menu.style.display = 'none';
+      });
+    </script>
+
+  </body>
+</html>

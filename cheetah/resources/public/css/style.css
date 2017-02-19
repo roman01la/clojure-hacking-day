@@ -1,13 +1,15 @@
-/* globals */
+/** Globals **/
 body,
-.screen {
+#app .screen {
   margin: 0;
-  font: normal 16px sans-serif;
+  font: normal 14px sans-serif;
+  width: 100vw;
+  height: 100vh;
 }
 
 #app * { box-sizing: border-box;}
 
-/* base */
+/** Base **/
 input {
   border: none;
   border-radius: 4px;
@@ -24,7 +26,7 @@ button {
   font-size: 14px;
 }
 
-/* top level screen */
+/** Top  level screen **/
 .screen {
   background: #fafafa;
   display: flex;
@@ -32,13 +34,7 @@ button {
   position: relative;
 }
 
-.screen.chat main {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-/* screen header */
+/** Screen header **/
 .app-header {
   height: 48px;
   background: #338de9;
@@ -48,10 +44,82 @@ button {
   justify-content: space-between;
   padding: 0 16px;
 }
+.app-header .screen-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.app-header .left,
+.app-header .right {
+  display: flex;
+}
+.app-header .btn.back {
+  width: 32px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0 16px 0 0;
+}
+.room-users-count {
+  font-size: 10px;
+  text-align: right;
+}
 .menu-btn {
   font-size: 17px;
   padding: 0 12px;
   background: rgba(255, 255, 255, 0.1);
+}
+
+
+/** Off canvas navigation menu **/
+.menu-wrap {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.menu-wrap .overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+.menu {
+  width: 280px;
+  height: 100vh;
+  background: #fafafa;
+  box-shadow: 0 -2px 32px rgba(0, 0, 0, 0.4);
+  padding: 32px 0;
+  position: relative;
+  z-index: 1;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.menu a {
+  text-decoration: none;
+  color: #666;
+  padding: 16px;
+  background: #eee;
+  display: block;
+}
+.menu .list-item {
+  margin: 0 0 4px;
+}
+
+
+/** Chat screen **/
+.screen.chat main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 /* chat list */
@@ -107,7 +175,6 @@ button {
 /* message form */
 form.message {
   display: flex;
-  flex-direction: column;
   background: #fff;
   padding: 8px;
   border-radius: 2px;
@@ -115,40 +182,118 @@ form.message {
 }
 form.message input {
   background: #eee;
+  flex: 1;
+  margin: 0 8px 0 0;
+}
+form.message .send-btn {
+  min-width: 64px;
 }
 
-/* off canvas navigation menu */
-.menu-wrap {
+/** Sign In screen **/
+.screen.signin {
+  justify-content: center;
+  align-items: center;
+}
+
+.screen.signin h1 {
+  color: #338de9;
+  font-weight: 500;
+  font-family: serif;
+  font-size: 48px;
+  position: relative;
+}
+.screen.signin h1::before,
+.screen.signin h1::after {
+  content: '';
   position: absolute;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.4);
-  display: flex;
-  justify-content: flex-end;
+  display: block;
+  height: 1px;
+  width: 96px;
+  background: #338de9;
+  top: 50%;
 }
-.menu {
-  width: 280px;
-  height: 100vh;
-  background: #fafafa;
-  box-shadow: 0 -2px 32px rgba(0, 0, 0, 0.4);
-  padding: 32px 0;
+.screen.signin h1::before {
+  left: -10%;
+  transform: translate3d(-100%, -50%, 0);
 }
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.screen.signin h1::after {
+  right: -10%;
+  transform: translate3d(100%, -50%, 0);
+}
+
+form.signin {
   display: flex;
   flex-direction: column;
-}
-.menu a {
-  text-decoration: none;
-  color: #666;
+  background: #fff;
   padding: 16px;
-  background: #eee;
-  display: block;
+  border-radius: 2px;
+  width: 260px;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.1);
 }
-.menu .list-item {
+form.signin input {
+  margin: 0 0 16px;
+  background: #eee;
+}
+
+
+/** Chat Rooms screen **/
+.screen.rooms main {
+}
+
+.rooms-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.room-item {
+  height: 48px;
+  display: flex;
+  padding: 0 16px;
+  line-height: 48px;
+}
+.room-item a {
+  flex: 1;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+}
+
+
+/** Profile screen **/
+.screen.profile main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen.profile main .avatar {
+  width: 96px;
+  height: 96px;
+  margin: 0 0 16px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 16px;
+}
+.field label {
+  font-size: 14px;
   margin: 0 0 4px;
+}
+
+form.profile {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 16px;
+  border-radius: 2px;
+  width: 260px;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.1);
+}
+form.profile input {
+  background: #eee;
 }
