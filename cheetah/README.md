@@ -1,6 +1,6 @@
 # cheetah
 
-<img src="cheetah.svg" width="248" />
+<img src="cheetah.png" width="248" />
 
 _“Cheetah”_ is the name of a web app that you are going to build. It is a chat web application where a user can sign in, set up a profile and start talking to other users.
 
