@@ -8,7 +8,10 @@
 
   :dependencies [[org.clojure/clojure "1.9.0-alpha14"]
                  [org.clojure/clojurescript "1.9.473"]
-                 [rum "0.10.8"]]
+                 [rum "0.10.8"]
+                 [kibu/pushy "0.3.6"]
+                 [funcool/bide "1.4.0"]
+                 [cljsjs/firebase "3.5.3-0"]]
 
   :plugins [[lein-figwheel "0.5.9"]
             [lein-cljsbuild "1.1.5" :exclusions [[org.clojure/clojure]]]]
@@ -20,7 +23,7 @@
   :cljsbuild {:builds
               [{:id "dev"
                 :source-paths ["src"]
-                :figwheel true
+                :figwheel {:on-jsload cheetah.core/render}
                 :compiler {:main cheetah.core
                            :asset-path "js/compiled/out"
                            :output-to "resources/public/js/compiled/cheetah.js"
