@@ -1,36 +1,44 @@
 (ns cheetah.components.layouts.room
   (:require [rum.core :as rum]
+            [goog.object :as gobj]
             [cheetah.api :refer [send!]]
             [cheetah.components.base :as base]))
 
-(defn send-msg! [msg]
-  (-> (send! msg)
-      (.then #(console.log "MSG SENT" %))
-      (.catch #(console.log "MSG SEND ERR" %))))
+(set! *warn-on-infer* true)
 
-(defn create-msg [uname room text]
+(defn send-msg! [msg cb]
+  (-> ^js/Promise (send! msg)
+      ^js/Promise (.then cb)))
+
+(defn create-msg [uname room text avatar]
   {:uname uname
    :room room
-   :text text})
+   :text text
+   :avatar avatar
+   :time (js/Date.now)})
 
-(rum/defc ChatMsg [{:keys [uname text avatar]} owner-name]
+(rum/defc ChatMsg [{:keys [uname text avatar time]} owner-name]
   [:li {:class (str "chat-msg" (when (= uname owner-name) " owner"))}
-   (base/Avatar {:url avatar})
-   [:div.bubble
-    [:div {:class (if (= uname owner-name) "bubble-uname_owner" "bubble-uname")}
-     uname]
-    [:div.body text]]])
+   [:div.time (-> time js/Date. .toLocaleString)]
+   [:div
+    (base/Avatar {:url avatar})
+    [:div.bubble
+     [:div {:class (if (= uname owner-name) "bubble-uname_owner" "bubble-uname")}
+      uname]
+     [:div.body text]]]])
 
 (rum/defcs Layout <
   rum/reactive
   (rum/local "" ::val)
-  [{val ::val} db {:keys [id]}]
-  (let [uname (get-in @db [:user :name])
-        msgs (rum/react (rum/cursor-in db [:rooms id]))]
+  [{val ::val} db history {:keys [id]}]
+  (let [uname (-> @db :user :name)
+        avatar (-> @db :user :avatar)
+        msgs (->> (rum/cursor-in db [:messages]) rum/react (group-by :room))
+        msgs (sort-by :time (get msgs id))]
     [:div.screen.chat
-     (base/Header {:title id
-                   :back? true
-                   :users? (count (keys (group-by :uname msgs)))})
+     (base/Header db
+                  {:title id
+                   :back? true})
      [:main
       [:ul.chat-list
        (for [msg msgs]
@@ -38,10 +46,12 @@
      [:footer.app-footer
       [:form.message
        {:on-submit #(do
-                     (.preventDefault %)
-                     (send-msg! (create-msg uname id @val)))}
+                     (.preventDefault ^js/Event %)
+                     (send-msg! (create-msg uname id @val avatar)
+                                (partial reset! val "")))}
        (base/Input {:class "message"
                     :value @val
-                    :on-change #(reset! val (.. % -target -value))})
+                    :on-change #(reset! val (-> % (gobj/get "target") (gobj/get "value")))})
        (base/Button {:disabled (empty? @val)}
-                    "Send")]]]))
+                    "Send")]]
+     (base/Menu db history)]))

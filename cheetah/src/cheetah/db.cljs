@@ -1,5 +1,11 @@
 (ns cheetah.db)
 
-(defonce db (atom {:route [:sign-in]
-                   :user {:name nil}
-                   :rooms {}}))
+(def initial-state
+  {:route [:sign-in]
+   :user {:name nil
+          :avatar nil}
+   :messages []
+   :rooms []
+   :menu {:visible? false}})
+
+(defonce db (atom initial-state))

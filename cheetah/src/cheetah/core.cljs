@@ -2,7 +2,6 @@
   (:require [rum.core :as rum]
             [bide.core :as r]
             [pushy.core :as pushy]
-            [cheetah.api :refer [subscribe!]]
             [cheetah.db :refer [db]]
             [cheetah.components.layout :refer [Layout]]
             [cheetah.components.layouts.sign-in :as sign-in]
@@ -10,8 +9,6 @@
             [cheetah.components.layouts.room :as room]))
 
 (enable-console-print!)
-
-(subscribe! #(swap! db assoc :rooms (group-by :room %)))
 
 
 (def router
@@ -29,8 +26,8 @@
     (Layout
      (case handler
            :sign-in (sign-in/Layout db history)
-           :chat-list (chat-list/Layout db params)
-           :room (room/Layout db params)
+           :chat-list (chat-list/Layout db history params)
+           :room (room/Layout db history params)
            nil))))
 
 (defn render []

@@ -6,9 +6,10 @@
   [:li.room-item
    [:a {:href (str "/rooms/" name)} name]])
 
-(rum/defc Layout < rum/reactive [db]
+(rum/defc Layout < rum/reactive [db history]
   [:div.screen.rooms
-   (base/Header {:title "Chat Rooms"})
+   (base/Header db {:title "Chat Rooms"})
    [:main
     [:ul.rooms-list
-     (map RoomItem (keys (rum/react (rum/cursor-in db [:rooms]))))]]])
+     (map RoomItem (rum/react (rum/cursor-in db [:rooms])))]]
+   (base/Menu db history)])

@@ -25,6 +25,9 @@ button {
   color: #fff;
   font-size: 14px;
 }
+button:disabled {
+  background: #cccccc;
+}
 
 /** Top  level screen **/
 .screen {
@@ -134,17 +137,22 @@ button {
   font-size: 8px;
   color: #999;
   text-align: center;
-  margin: 16px 0 0;
+  margin: 16px 0 4px;
 }
 
 /* chat message */
 .chat-msg {
   padding: 8px;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   margin: 8px 0;
 }
-.chat-msg.owner {
+.chat-msg > div:last-child {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.chat-msg.owner > div:last-child {
+  display: flex;
   flex-direction: row;
 }
 .avatar {

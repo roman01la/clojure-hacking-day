@@ -28,6 +28,7 @@
                            :asset-path "js/compiled/out"
                            :output-to "resources/public/js/compiled/cheetah.js"
                            :output-dir "resources/public/js/compiled/out"
+                           :infer-externs true
                            :source-map-timestamp true
                            :preloads [devtools.preload]}}
 
@@ -35,7 +36,10 @@
                 :source-paths ["src"]
                 :compiler {:output-to "resources/public/js/compiled/cheetah.js"
                            :main cheetah.core
+                           :infer-externs true
                            :optimizations :advanced
+                           :language-in :ecmascript5
+                           :language-out :ecmascript5
                            :pretty-print false}}
 
                {:id "designs"
